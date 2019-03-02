@@ -4,7 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class Attractor : MonoBehaviour
 {
-    private const float G = 667.4f;
+    // private const float G = 667.4f;
+    private const float G = 0.0000000000667408f;
 
     private static List<Attractor> _attractors;
 
