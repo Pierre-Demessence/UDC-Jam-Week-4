@@ -32,7 +32,6 @@ public class SceneManagerHelper : MonoBehaviour
         var asyncOperation = SceneManager.LoadSceneAsync(sceneName);
         asyncOperation.allowSceneActivation = false;
         asyncOperation.completed += operation => _asyncOperations.Remove(sceneName);
-        ;
         _asyncOperations[sceneName] = asyncOperation;
     }
 }

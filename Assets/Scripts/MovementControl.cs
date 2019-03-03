@@ -7,8 +7,8 @@ public class MovementControl : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal") * _movementSpeed * Time.deltaTime;
-        float vertical = Input.GetAxis("Vertical") * _movementSpeed * Time.deltaTime;
+        var horizontal = Input.GetAxis("Horizontal") * _movementSpeed * Time.deltaTime;
+        var vertical = Input.GetAxis("Vertical") * _movementSpeed * Time.deltaTime;
 
         transform.Translate(horizontal, vertical, 0);
     }

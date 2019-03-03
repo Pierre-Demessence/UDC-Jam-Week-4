@@ -38,7 +38,7 @@ public class Attractor : MonoBehaviour
         var direction = _rb.position - rbToAttract.position;
         var distance = direction.magnitude;
 
-        if (distance == 0f)
+        if (Mathf.Approximately(distance, 0f))
             return;
 
         var forceMagnitude = G * ((_rb.mass * rbToAttract.mass) / Mathf.Pow(distance, 2));
